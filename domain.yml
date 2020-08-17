@@ -1,0 +1,60 @@
+--- 
+actions: 
+  - utter_greet
+  - utter_bye
+  - utter_ask_specialization
+  - utter_ask_date
+  - utter_ask_time
+  - action_appointment
+  - action_confirm
+  - utter_gratitude
+entities: 
+  - dr
+  - date
+  - city
+  - time
+  - specialist
+  - appointment
+intents: 
+  - create_apt
+  - confirm_specialization
+  - confirm_dr
+  - confirm_time
+  - confirm_date
+  - greeting
+  - bye
+  - affirm
+slots: 
+  date: 
+    type: text
+  name: 
+    type: text
+  specialist: 
+    type: text
+  time: 
+    type: text
+  specilization:
+    type: text
+  phone number:
+    type: text
+  rating:
+    type: text
+  
+responses: 
+  utter_ask_date: 
+    - text: "When do you want to schedule this appointment?"
+    - text: "Ok, for what day?"
+  utter_ask_specialization: 
+    - text: "Which specialist are you looking for?"
+    - text: "Please mention your specialist or Specialization?"
+  utter_ask_time: 
+    - text: "please select the time?"
+    - text: "Ok, for what time?"
+  utter_bye: 
+    - text: " My pleasure to help you"
+  utter_greet: 
+    - text: "Hello, how can I help you?"
+    - text: "Hello, welcome to the Doctor Appointment Bot!"
+  utter_gratitude:
+    - text: "No problem! Happy to help :)"
+    - text: "Glad that I could help you!"
